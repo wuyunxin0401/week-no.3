@@ -1,0 +1,55 @@
+
+//store Info 門市照片及地圖 start
+.storeInfo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 160px;
+    @include pad{
+        margin-bottom: 96px;
+    }
+    @include mobile{
+        margin-bottom: 56px;
+    }
+    &Card{
+        width: 40%;
+        @include pad{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        @include mobile{
+            display: block;
+            margin-bottom: 16px;
+        }
+    }
+    &Map{
+        width: 57%;
+        background: url(../images/locate-map.png) no-repeat center;
+        background-size: cover;
+        height: 440px;
+        @include pad{
+            width: 100%;
+        }
+        @include mobile{
+            height: 220px;
+        }
+    }
+    &Pic{
+        height: 224px;
+        @include pad{
+            width: 48%;
+            height: 164px;
+            margin-bottom: 32px;
+        }
+        @include mobile{
+            width: 100%;
+            margin-bottom: 0;
+        }
+    }
+    &Pic-1{
+        background: url(../images/locate1.jpeg) no-repeat center/cover;
+    }
+}
+//store Info 門市照片及地圖 end

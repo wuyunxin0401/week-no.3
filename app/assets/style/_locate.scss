@@ -1,0 +1,207 @@
+//locate 標題 start
+.locate{
+    &Block{
+        padding-top: 96px;
+        @include pad{
+            padding-top: 60px;
+        }
+        @include mobile{
+            padding-top: 28px;
+        }
+    }
+    &Title{
+        font-size: $text-4xl;
+        line-height: 80px;
+        font-weight: bold;
+        padding-left: 16px;
+        border-left: 8px solid #9F1213;
+        margin-bottom: 60px;
+        @include pad{
+            border-left: 4px solid #9F1213;
+            margin-bottom: 40px;
+        }
+        @include mobile{
+            font-size: $text-2l;
+            line-height: 40px;
+            margin-bottom: 24px;
+        }
+    }
+}
+//locate 標題 end
+
+
+//locate 地區下拉式選單 start
+.locate{
+    &Area{
+        margin-bottom: 36px;
+        @include pad{
+            margin-bottom: 24px;
+        }
+        @include mobile{
+            margin-bottom: 20px;
+        }
+        .areaSelect{
+            font-size: $text-l;
+            line-height: 30px;
+            margin-right: 20px;
+            @include pad{
+                font-size: $text-base;
+                line-height: 24px;
+            }
+            @include mobile{
+                font-size: $text-s;
+                line-height: 20px;
+                margin-right: 12px;
+            }
+        }
+        .area{
+            font-size: 18px;
+            line-height: 26px;
+            width: 35%;
+            padding: 8px 20px;
+            border: 1px solid $gray-300;
+            @include pad{
+                font-size: $text-base;
+                line-height: 24px;
+            }
+            @include mobile{
+                width: 79%;
+                font-size: $text-s;
+                line-height: 20px;
+            }
+        }
+    }
+}
+//locate 地區下拉式選單 end
+
+
+//Store 門市照片 start
+.store{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 128px;
+    @include pad{
+        justify-content: space-between;
+        margin-bottom: 76px;
+    }
+    @include mobile{
+        margin-bottom: 40px;
+    }
+    &Card{
+        width: 30%;
+        margin-right: 30px;
+        margin-bottom: 32px;
+        @include pad{
+            width: 48%;
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+        @include mobile{
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+    }
+    &Pic{
+        height: 224px;
+        @include pad{
+            height: 164px;
+        }
+    }
+    &Pic-1{
+        background: url(../images/locate1.jpeg) no-repeat center;
+        background-size: cover;
+    }
+    &Pic-2{
+        background: url(../images/locate2.jpg) no-repeat center;
+        background-size: cover;
+    }
+    &Pic-3{
+        background: url(../images/locate3.jpg) no-repeat center;
+        background-size: cover;
+    }
+    &Pic-4{
+        background: url(../images/locate4.jpg) no-repeat center;
+        background-size: cover;
+    }
+    &Pic-5{
+        background: url(../images/locate5.jpg) no-repeat center;
+        background-size: cover;
+    }
+}
+//Store 門市照片 end
+
+
+//Store 門市標題 start
+.store{
+    &Title{
+        font-size: $text-l;
+        line-height: 36px;
+        color: $gray-600;
+        padding: 12px 24px;
+        border: 1px solid #00000020;
+        @include pad{
+            font-size: $text-base;
+            line-height: 24px;
+            padding: 8px 24px;
+        }
+    }
+}
+//Store 門市標題 end
+
+
+//Store 門市內容 start
+.store{
+    &Content{
+        border: 1px solid #00000020;
+        padding: 8px 24px;
+        @include pad{
+            padding: 12px 24px;
+        }
+    }
+    &Item{
+        display: flex;
+        padding: 8px 0;
+        @include pad{
+            padding: 4px 0;
+            span{
+                font-size: $text-base;
+            }
+        }
+    }
+    &Text{
+        font-size: $text-m;
+        line-height: 30px;
+        margin-left: 10px;
+        @include pad{
+            font-size: $text-s;
+            line-height: 21px;
+            margin-left: 8px;
+        }
+    }
+}
+//Store 門市內容 end
+
+
+//Store a連結 詳細資訊 start
+.store{
+    &Btn{
+        font-size: 19px;
+        line-height: 27px;
+        background: $dark;
+        color: $white;
+        text-align: center;
+        padding: 20px 0;
+        @include pad{
+            font-size: $text-s;
+            line-height: 21px;
+            padding: 16px 0;
+        }
+        &:hover{
+            opacity: 0.5;
+            transition: all .4s;
+        }
+    }
+}
+//Store a連結 詳細資訊 end
